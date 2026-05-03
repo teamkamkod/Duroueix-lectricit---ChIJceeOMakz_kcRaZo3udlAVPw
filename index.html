@@ -1,0 +1,1519 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Duroueix électricité — électricien — Angoulême</title>
+  <meta name="description" content="Duroueix électricité à Angoulême : électricien professionnel et fiable. Services d'installation, dépannage et sécurité électrique.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --primary: #1A4D8F;
+      --secondary: #F5A623;
+      --background: #F9FAFB;
+      --text: #222222;
+      --cta: #E94E1B;
+      --white: #ffffff;
+      --light-gray: #eef0f3;
+      --radius: 4px;
+      --section-padding: 64px;
+      --font-heading: 'Montserrat', sans-serif;
+      --font-body: 'Roboto', sans-serif;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: var(--font-body);
+      background: var(--background);
+      color: var(--text);
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+
+    /* ─── NAVIGATION ─── */
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: var(--white);
+      box-shadow: 0 2px 12px rgba(0,0,0,0.10);
+      padding: 0 24px;
+    }
+
+    .nav-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 68px;
+    }
+
+    .nav-logo {
+      font-family: var(--font-heading);
+      font-weight: 800;
+      font-size: 1.15rem;
+      color: var(--primary);
+      text-decoration: none;
+      letter-spacing: -0.5px;
+      flex-shrink: 0;
+    }
+
+    .nav-logo span { color: var(--secondary); }
+
+    .nav-links {
+      display: none;
+      list-style: none;
+      gap: 28px;
+      align-items: center;
+    }
+
+    .nav-links a {
+      font-family: var(--font-heading);
+      font-size: 0.82rem;
+      font-weight: 600;
+      color: var(--text);
+      text-decoration: none;
+      letter-spacing: 0.3px;
+      transition: color 0.2s;
+    }
+
+    .nav-links a:hover { color: var(--primary); }
+
+    .nav-cta {
+      background: var(--cta);
+      color: var(--white) !important;
+      padding: 9px 18px;
+      border-radius: var(--radius);
+      transition: opacity 0.2s !important;
+    }
+
+    .nav-cta:hover { opacity: 0.88; }
+
+    .hamburger {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+      cursor: pointer;
+      background: none;
+      border: none;
+      padding: 4px;
+    }
+
+    .hamburger span {
+      display: block;
+      width: 26px;
+      height: 3px;
+      background: var(--primary);
+      border-radius: 2px;
+      transition: all 0.3s;
+    }
+
+    .hamburger.open span:nth-child(1) { transform: translateY(8px) rotate(45deg); }
+    .hamburger.open span:nth-child(2) { opacity: 0; }
+    .hamburger.open span:nth-child(3) { transform: translateY(-8px) rotate(-45deg); }
+
+    .mobile-menu {
+      display: none;
+      flex-direction: column;
+      background: var(--white);
+      padding: 16px 24px 24px;
+      border-top: 1px solid var(--light-gray);
+    }
+
+    .mobile-menu.open { display: flex; }
+
+    .mobile-menu a {
+      font-family: var(--font-heading);
+      font-size: 0.95rem;
+      font-weight: 600;
+      color: var(--text);
+      text-decoration: none;
+      padding: 12px 0;
+      border-bottom: 1px solid var(--light-gray);
+      transition: color 0.2s;
+    }
+
+    .mobile-menu a:hover { color: var(--primary); }
+    .mobile-menu a:last-child { border-bottom: none; }
+
+    @media (min-width: 768px) {
+      .nav-links { display: flex; }
+      .hamburger { display: none; }
+      .mobile-menu { display: none !important; }
+    }
+
+    /* ─── HERO ─── */
+    #hero {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      background: linear-gradient(135deg, var(--primary) 0%, #0d2e5e 100%);
+      position: relative;
+      overflow: hidden;
+    }
+
+    #hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: 
+        radial-gradient(ellipse at 70% 50%, rgba(245,166,35,0.12) 0%, transparent 60%),
+        url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+      pointer-events: none;
+    }
+
+    .hero-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 24px 16px;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .hero-text { flex: 1; }
+
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(245,166,35,0.15);
+      border: 1px solid rgba(245,166,35,0.35);
+      color: var(--secondary);
+      font-family: var(--font-heading);
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      padding: 6px 14px;
+      border-radius: var(--radius);
+      margin-bottom: 20px;
+    }
+
+    .hero-badge::before { content: '⚡'; }
+
+    #hero h1 {
+      font-family: var(--font-heading);
+      font-size: clamp(1.6rem, 5vw, 3.8rem);
+      font-weight: 800;
+      color: var(--white);
+      line-height: 1.15;
+      margin-bottom: 20px;
+      letter-spacing: -1px;
+    }
+
+    #hero h1 span { color: var(--secondary); }
+
+    #hero p {
+      font-size: clamp(0.95rem, 2.5vw, 1.2rem);
+      color: rgba(255,255,255,0.82);
+      margin-bottom: 36px;
+      max-width: 520px;
+      font-weight: 300;
+    }
+
+    .hero-buttons {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      width: 100%;
+    }
+
+    .btn-primary {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      background: var(--cta);
+      color: var(--white);
+      font-family: var(--font-heading);
+      font-size: 0.95rem;
+      font-weight: 700;
+      padding: 15px 28px;
+      border-radius: var(--radius);
+      text-decoration: none;
+      border: none;
+      cursor: pointer;
+      transition: transform 0.2s, box-shadow 0.2s;
+      width: 100%;
+      text-align: center;
+    }
+
+    .btn-primary:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 24px rgba(233,78,27,0.35);
+    }
+
+    .btn-secondary {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      background: transparent;
+      color: var(--white);
+      font-family: var(--font-heading);
+      font-size: 0.95rem;
+      font-weight: 600;
+      padding: 14px 28px;
+      border-radius: var(--radius);
+      text-decoration: none;
+      border: 2px solid rgba(255,255,255,0.45);
+      cursor: pointer;
+      transition: border-color 0.2s, background 0.2s;
+      width: 100%;
+      text-align: center;
+    }
+
+    .btn-secondary:hover {
+      border-color: var(--white);
+      background: rgba(255,255,255,0.08);
+    }
+
+    .hero-visual {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .hero-stat-row {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 12px;
+    }
+
+    .hero-stat {
+      background: rgba(255,255,255,0.08);
+      border: 1px solid rgba(255,255,255,0.12);
+      border-radius: var(--radius);
+      padding: 16px 12px;
+      text-align: center;
+      backdrop-filter: blur(8px);
+    }
+
+    .hero-stat strong {
+      display: block;
+      font-family: var(--font-heading);
+      font-size: 1.5rem;
+      font-weight: 800;
+      color: var(--secondary);
+      line-height: 1;
+      margin-bottom: 4px;
+    }
+
+    .hero-stat span {
+      font-size: 0.72rem;
+      color: rgba(255,255,255,0.65);
+      font-weight: 400;
+      letter-spacing: 0.3px;
+    }
+
+    .hero-phone-card {
+      background: rgba(255,255,255,0.10);
+      border: 1px solid rgba(255,255,255,0.18);
+      border-radius: var(--radius);
+      padding: 20px 24px;
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      backdrop-filter: blur(8px);
+    }
+
+    .hero-phone-icon {
+      width: 44px;
+      height: 44px;
+      background: var(--secondary);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.1rem;
+      flex-shrink: 0;
+    }
+
+    .hero-phone-card p {
+      margin: 0;
+      font-size: 0.75rem;
+      color: rgba(255,255,255,0.6);
+      font-weight: 400;
+    }
+
+    .hero-phone-card a {
+      font-family: var(--font-heading);
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: var(--white);
+      text-decoration: none;
+    }
+
+    @media (min-width: 768px) {
+      .hero-inner {
+        flex-direction: row;
+        align-items: center;
+        padding: 64px 24px;
+        gap: 64px;
+      }
+
+      .hero-text { flex: 1.1; }
+      .hero-visual { flex: 0.9; }
+
+      .hero-buttons {
+        flex-direction: row;
+        width: auto;
+      }
+
+      .btn-primary, .btn-secondary { width: auto; }
+    }
+
+    /* ─── SECTIONS COMMON ─── */
+    section {
+      padding: 48px 16px;
+    }
+
+    @media (min-width: 768px) {
+      section {
+        padding: var(--section-padding) 24px;
+      }
+    }
+
+    .section-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .section-tag {
+      font-family: var(--font-heading);
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--secondary);
+      margin-bottom: 10px;
+    }
+
+    .section-title {
+      font-family: var(--font-heading);
+      font-size: clamp(1.4rem, 3.5vw, 2.4rem);
+      font-weight: 800;
+      color: var(--primary);
+      margin-bottom: 16px;
+      line-height: 1.2;
+    }
+
+    .section-subtitle {
+      font-size: 1rem;
+      color: #555;
+      max-width: 600px;
+      margin-bottom: 48px;
+    }
+
+    /* ─── SERVICES ─── */
+    #services { background: var(--white); }
+
+    .services-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 20px;
+    }
+
+    @media (min-width: 600px) {
+      .services-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+
+    @media (min-width: 1024px) {
+      .services-grid { grid-template-columns: repeat(3, 1fr); }
+    }
+
+    .service-card {
+      background: var(--background);
+      border: 1px solid #e5e7eb;
+      border-radius: var(--radius);
+      padding: 32px 28px;
+      position: relative;
+      overflow: hidden;
+      transition: transform 0.25s, box-shadow 0.25s;
+    }
+
+    .service-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 4px;
+      height: 100%;
+      background: var(--primary);
+      border-radius: 0;
+    }
+
+    .service-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 12px 32px rgba(26,77,143,0.12);
+    }
+
+    .service-icon {
+      width: 52px;
+      height: 52px;
+      background: linear-gradient(135deg, var(--primary), #2563c0);
+      border-radius: var(--radius);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.4rem;
+      margin-bottom: 20px;
+    }
+
+    .service-card h3 {
+      font-family: var(--font-heading);
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: var(--primary);
+      margin-bottom: 10px;
+    }
+
+    .service-card p {
+      font-size: 0.9rem;
+      color: #555;
+      line-height: 1.6;
+    }
+
+    /* ─── ZONE INTERVENTION ─── */
+    #zone-intervention { background: var(--primary); }
+
+    #zone-intervention .section-title { color: var(--white); }
+    #zone-intervention .section-tag { color: var(--secondary); }
+
+    .zone-content {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 40px;
+      align-items: center;
+    }
+
+    @media (min-width: 768px) {
+      .zone-content { grid-template-columns: 1fr 1fr; }
+    }
+
+    .zone-text p {
+      color: rgba(255,255,255,0.80);
+      font-size: 1rem;
+      margin-bottom: 24px;
+      line-height: 1.7;
+    }
+
+    .zone-list {
+      list-style: none;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+    }
+
+    .zone-list li {
+      color: rgba(255,255,255,0.85);
+      font-size: 0.9rem;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .zone-list li::before {
+      content: '⚡';
+      font-size: 0.8rem;
+      color: var(--secondary);
+      flex-shrink: 0;
+    }
+
+    .zone-map {
+      border-radius: var(--radius);
+      overflow: hidden;
+      box-shadow: 0 16px 40px rgba(0,0,0,0.25);
+      height: 280px;
+    }
+
+    .zone-map iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+      display: block;
+    }
+
+    @media (min-width: 768px) {
+      .zone-map { height: 360px; }
+    }
+
+    /* ─── REVIEWS ─── */
+    #avis-clients { background: var(--background); }
+
+    .reviews-header {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      margin-bottom: 40px;
+    }
+
+    @media (min-width: 768px) {
+      .reviews-header {
+        flex-direction: row;
+        align-items: flex-end;
+        justify-content: space-between;
+      }
+    }
+
+    .rating-overview {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      background: var(--white);
+      border: 1px solid #e5e7eb;
+      border-radius: var(--radius);
+      padding: 16px 24px;
+    }
+
+    .rating-number {
+      font-family: var(--font-heading);
+      font-size: 2.4rem;
+      font-weight: 800;
+      color: var(--primary);
+      line-height: 1;
+    }
+
+    .rating-stars { color: var(--secondary); font-size: 1.2rem; letter-spacing: 2px; }
+    .rating-count { font-size: 0.85rem; color: #777; margin-top: 2px; }
+
+    .reviews-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 20px;
+    }
+
+    @media (min-width: 768px) {
+      .reviews-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+
+    @media (min-width: 1024px) {
+      .reviews-grid { grid-template-columns: repeat(3, 1fr); }
+    }
+
+    .review-card {
+      background: var(--white);
+      border: 1px solid #e5e7eb;
+      border-radius: var(--radius);
+      padding: 28px;
+      position: relative;
+      transition: box-shadow 0.25s;
+    }
+
+    .review-card:hover {
+      box-shadow: 0 8px 24px rgba(26,77,143,0.09);
+    }
+
+    .review-card::before {
+      content: '"';
+      position: absolute;
+      top: 12px;
+      right: 20px;
+      font-size: 5rem;
+      line-height: 1;
+      color: var(--light-gray);
+      font-family: Georgia, serif;
+      font-weight: 700;
+    }
+
+    .review-stars { color: var(--secondary); font-size: 1rem; margin-bottom: 12px; letter-spacing: 2px; }
+
+    .review-text {
+      font-size: 0.92rem;
+      color: #444;
+      line-height: 1.65;
+      margin-bottom: 20px;
+      font-style: italic;
+    }
+
+    .review-author {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .review-avatar {
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--primary), var(--secondary));
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: var(--font-heading);
+      font-size: 0.85rem;
+      font-weight: 700;
+      color: var(--white);
+      flex-shrink: 0;
+    }
+
+    .review-author strong {
+      font-family: var(--font-heading);
+      font-size: 0.88rem;
+      font-weight: 700;
+      color: var(--text);
+    }
+
+    .review-source { font-size: 0.75rem; color: #999; }
+
+    /* ─── ABOUT / PRESENTATION ─── */
+    #presentation { background: var(--white); }
+
+    .about-content {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 48px;
+      align-items: center;
+    }
+
+    @media (min-width: 768px) {
+      .about-content { grid-template-columns: 1fr 1fr; }
+    }
+
+    .about-text p {
+      font-size: 1rem;
+      color: #444;
+      line-height: 1.75;
+      margin-bottom: 24px;
+    }
+
+    .about-certifs {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 8px;
+    }
+
+    .certif-badge {
+      background: rgba(26,77,143,0.07);
+      border: 1px solid rgba(26,77,143,0.18);
+      color: var(--primary);
+      font-family: var(--font-heading);
+      font-size: 0.75rem;
+      font-weight: 700;
+      padding: 6px 14px;
+      border-radius: var(--radius);
+      letter-spacing: 0.5px;
+    }
+
+    .about-visual {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+    }
+
+    .about-feature {
+      background: var(--background);
+      border: 1px solid #e5e7eb;
+      border-radius: var(--radius);
+      padding: 24px 18px;
+      text-align: center;
+    }
+
+    .about-feature .icon { font-size: 2rem; margin-bottom: 10px; display: block; }
+
+    .about-feature strong {
+      display: block;
+      font-family: var(--font-heading);
+      font-size: 0.82rem;
+      font-weight: 700;
+      color: var(--primary);
+      margin-bottom: 4px;
+    }
+
+    .about-feature span {
+      font-size: 0.75rem;
+      color: #888;
+    }
+
+    /* ─── GARANTIES ─── */
+    #garanties { background: var(--background); }
+
+    .garanties-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 16px;
+    }
+
+    @media (min-width: 600px) {
+      .garanties-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+
+    @media (min-width: 1024px) {
+      .garanties-grid { grid-template-columns: repeat(4, 1fr); }
+    }
+
+    .garantie-card {
+      background: var(--white);
+      border: 1px solid #e5e7eb;
+      border-radius: var(--radius);
+      padding: 28px 22px;
+      text-align: center;
+      transition: transform 0.25s, box-shadow 0.25s;
+    }
+
+    .garantie-card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 10px 28px rgba(26,77,143,0.10);
+    }
+
+    .garantie-icon {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.6rem;
+      margin: 0 auto 16px;
+    }
+
+    .garantie-card h3 {
+      font-family: var(--font-heading);
+      font-size: 0.95rem;
+      font-weight: 700;
+      color: var(--primary);
+      margin-bottom: 8px;
+    }
+
+    .garantie-card p {
+      font-size: 0.82rem;
+      color: #666;
+      line-height: 1.55;
+    }
+
+    /* ─── CONTACT ─── */
+    #contact-rapide { background: var(--white); }
+
+    .contact-content {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 48px;
+    }
+
+    @media (min-width: 768px) {
+      .contact-content { grid-template-columns: 1fr 1fr; }
+    }
+
+    .contact-info h3 {
+      font-family: var(--font-heading);
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: var(--primary);
+      margin-bottom: 20px;
+    }
+
+    .contact-info-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 14px;
+      margin-bottom: 20px;
+    }
+
+    .contact-info-icon {
+      width: 42px;
+      height: 42px;
+      background: rgba(26,77,143,0.08);
+      border-radius: var(--radius);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.1rem;
+      flex-shrink: 0;
+    }
+
+    .contact-info-item strong {
+      display: block;
+      font-family: var(--font-heading);
+      font-size: 0.82rem;
+      font-weight: 700;
+      color: var(--text);
+      margin-bottom: 2px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    .contact-info-item a,
+    .contact-info-item p {
+      font-size: 0.95rem;
+      color: #444;
+      text-decoration: none;
+      line-height: 1.5;
+    }
+
+    .contact-info-item a:hover { color: var(--primary); }
+
+    .hours-table { width: 100%; }
+
+    .hours-row {
+      display: flex;
+      justify-content: space-between;
+      padding: 8px 0;
+      border-bottom: 1px solid var(--light-gray);
+      font-size: 0.88rem;
+    }
+
+    .hours-row:last-child { border-bottom: none; }
+
+    .hours-day { color: #555; font-weight: 500; }
+
+    .hours-time {
+      font-family: var(--font-heading);
+      font-size: 0.82rem;
+      font-weight: 600;
+      color: var(--primary);
+    }
+
+    .hours-time.closed { color: #bbb; }
+
+    .contact-form-wrapper label {
+      display: block;
+      font-family: var(--font-heading);
+      font-size: 0.78rem;
+      font-weight: 700;
+      color: var(--text);
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin-bottom: 6px;
+    }
+
+    .contact-form-wrapper input,
+    .contact-form-wrapper textarea {
+      width: 100%;
+      padding: 12px 14px;
+      border: 1.5px solid #d1d5db;
+      border-radius: var(--radius);
+      font-family: var(--font-body);
+      font-size: 0.95rem;
+      color: var(--text);
+      background: var(--background);
+      transition: border-color 0.2s, box-shadow 0.2s;
+      outline: none;
+      margin-bottom: 18px;
+    }
+
+    .contact-form-wrapper input:focus,
+    .contact-form-wrapper textarea:focus {
+      border-color: var(--primary);
+      box-shadow: 0 0 0 3px rgba(26,77,143,0.10);
+    }
+
+    .contact-form-wrapper textarea { height: 120px; resize: vertical; }
+
+    .btn-submit {
+      width: 100%;
+      background: var(--cta);
+      color: var(--white);
+      font-family: var(--font-heading);
+      font-size: 1rem;
+      font-weight: 700;
+      padding: 15px 28px;
+      border: none;
+      border-radius: var(--radius);
+      cursor: pointer;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .btn-submit:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 24px rgba(233,78,27,0.30);
+    }
+
+    /* ─── FOOTER ─── */
+    footer {
+      background: #0d1f3c;
+      color: rgba(255,255,255,0.75);
+      padding: 48px 16px 24px;
+    }
+
+    .footer-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 36px;
+      margin-bottom: 36px;
+    }
+
+    @media (min-width: 768px) {
+      .footer-grid { grid-template-columns: repeat(3, 1fr); }
+    }
+
+    .footer-brand strong {
+      font-family: var(--font-heading);
+      font-size: 1.1rem;
+      font-weight: 800;
+      color: var(--white);
+      display: block;
+      margin-bottom: 8px;
+    }
+
+    .footer-brand strong span { color: var(--secondary); }
+
+    .footer-brand p { font-size: 0.85rem; line-height: 1.6; }
+
+    .footer-col h4 {
+      font-family: var(--font-heading);
+      font-size: 0.8rem;
+      font-weight: 700;
+      color: var(--secondary);
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 14px;
+    }
+
+    .footer-col p,
+    .footer-col a {
+      font-size: 0.85rem;
+      color: rgba(255,255,255,0.70);
+      line-height: 1.8;
+      text-decoration: none;
+      display: block;
+    }
+
+    .footer-col a:hover { color: var(--white); }
+
+    .footer-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background: rgba(255,255,255,0.06);
+      border: 1px solid rgba(255,255,255,0.12);
+      border-radius: var(--radius);
+      padding: 12px 18px;
+      margin-top: 12px;
+    }
+
+    .footer-badge .stars { color: var(--secondary); font-size: 1rem; letter-spacing: 1px; }
+
+    .footer-badge-text strong {
+      display: block;
+      color: var(--white);
+      font-family: var(--font-heading);
+      font-size: 0.88rem;
+      font-weight: 700;
+    }
+
+    .footer-badge-text span { font-size: 0.75rem; color: rgba(255,255,255,0.55); }
+
+    .footer-bottom {
+      border-top: 1px solid rgba(255,255,255,0.08);
+      padding-top: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      text-align: center;
+    }
+
+    @media (min-width: 768px) {
+      .footer-bottom {
+        flex-direction: row;
+        justify-content: space-between;
+        text-align: left;
+      }
+    }
+
+    .footer-bottom p, .footer-bottom a {
+      font-size: 0.78rem;
+      color: rgba(255,255,255,0.40);
+      text-decoration: none;
+    }
+
+    .footer-bottom a:hover { color: rgba(255,255,255,0.70); }
+
+    /* ─── FADE IN ANIMATION ─── */
+    .fade-in {
+      opacity: 0;
+      transition: opacity 0.65s ease;
+    }
+
+    .fade-in.visible { opacity: 1; }
+
+    /* ─── UTILITY ─── */
+    .text-center { text-align: center; }
+
+    .gmaps-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      color: var(--primary);
+      font-family: var(--font-heading);
+      font-size: 0.82rem;
+      font-weight: 600;
+      text-decoration: none;
+      margin-top: 8px;
+    }
+
+    .gmaps-link:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+
+<!-- ─── NAVIGATION ─── -->
+<nav>
+  <div class="nav-inner">
+    <a href="#hero" class="nav-logo">Duroueix <span>électricité</span></a>
+    <ul class="nav-links">
+      <li><a href="#services">Services</a></li>
+      <li><a href="#zone-intervention">Zone</a></li>
+      <li><a href="#avis-clients">Avis</a></li>
+      <li><a href="#presentation">À propos</a></li>
+      <li><a href="#garanties">Garanties</a></li>
+      <li><a href="#contact-rapide" class="nav-cta">Devis gratuit</a></li>
+    </ul>
+    <button class="hamburger" aria-label="Menu" onclick="toggleMenu()">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#services" onclick="closeMenu()">Services</a>
+    <a href="#zone-intervention" onclick="closeMenu()">Zone d'intervention</a>
+    <a href="#avis-clients" onclick="closeMenu()">Avis clients</a>
+    <a href="#presentation" onclick="closeMenu()">À propos</a>
+    <a href="#garanties" onclick="closeMenu()">Garanties</a>
+    <a href="#contact-rapide" onclick="closeMenu()">Demander un devis</a>
+  </div>
+</nav>
+
+<!-- ─── HERO ─── -->
+<section id="hero">
+  <div class="hero-inner">
+    <div class="hero-text fade-in">
+      <div class="hero-badge">Électricien certifié — Angoulême</div>
+      <h1>Votre électricien<br>à <span>Angoulême</span></h1>
+      <p>Professionnalisme et réactivité pour tous vos besoins électriques.</p>
+      <div class="hero-buttons">
+        <a href="#contact-rapide" class="btn-primary">⚡ Demander un devis</a>
+        <a href="#presentation" class="btn-secondary">En savoir plus →</a>
+      </div>
+    </div>
+    <div class="hero-visual fade-in">
+      <div class="hero-stat-row">
+        <div class="hero-stat">
+          <strong>10+</strong>
+          <span>Ans d'expérience</span>
+        </div>
+        <div class="hero-stat">
+          <strong>5★</strong>
+          <span>Note Google</span>
+        </div>
+        <div class="hero-stat">
+          <strong>9</strong>
+          <span>Avis clients</span>
+        </div>
+      </div>
+      <div class="hero-phone-card">
+        <div class="hero-phone-icon">📞</div>
+        <div>
+          <p>Disponible du lundi au vendredi</p>
+          <a href="tel:+33668769107">+33 6 68 76 91 07</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── SERVICES ─── -->
+<section id="services">
+  <div class="section-inner">
+    <div class="section-tag">Ce que nous faisons</div>
+    <h2 class="section-title">Nos Services</h2>
+    <p class="section-subtitle">Des solutions électriques professionnelles pour particuliers et professionnels à Angoulême et environs.</p>
+    <div class="services-grid">
+      <div class="service-card fade-in">
+        <div class="service-icon">🔧</div>
+        <h3>Dépannage électrique urgent</h3>
+        <p>Intervention rapide pour tous vos problèmes électriques. Nous répondons présents quand vous en avez le plus besoin.</p>
+      </div>
+      <div class="service-card fade-in">
+        <div class="service-icon">⚡</div>
+        <h3>Installation électrique</h3>
+        <p>Mise en place de systèmes électriques fiables et sécurisés. Travaux neufs, rénovation, extension de réseau.</p>
+      </div>
+      <div class="service-card fade-in">
+        <div class="service-icon">🛡️</div>
+        <h3>Sécurité électrique</h3>
+        <p>Solutions pour assurer la sécurité de vos installations. Mise aux normes, diagnostics et contrôles de conformité.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── ZONE INTERVENTION ─── -->
+<section id="zone-intervention">
+  <div class="section-inner">
+    <div class="zone-content">
+      <div class="zone-text fade-in">
+        <div class="section-tag">Où nous intervenons</div>
+        <h2 class="section-title">Zone d'intervention</h2>
+        <p>Basés à Angoulême, nous intervenons dans toute la Charente pour vos travaux électriques, dépannages et mises aux normes.</p>
+        <ul class="zone-list">
+          <li>Angoulême</li>
+          <li>Soyaux</li>
+          <li>La Couronne</li>
+          <li>Gond-Pontouvre</li>
+          <li>Ruelle-sur-Touvre</li>
+          <li>Nersac</li>
+          <li>Saint-Yrieix</li>
+          <li>Charente (16)</li>
+        </ul>
+      </div>
+      <div class="zone-map fade-in">
+        <iframe
+          src="https://maps.google.com/maps?q=45.650683099999995,0.1836011&z=16&output=embed"
+          allowfullscreen=""
+          loading="lazy"
+          title="Localisation Duroueix électricité Angoulême">
+        </iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── AVIS CLIENTS ─── -->
+<section id="avis-clients">
+  <div class="section-inner">
+    <div class="reviews-header">
+      <div>
+        <div class="section-tag">Ce que disent nos clients</div>
+        <h2 class="section-title">Avis Clients</h2>
+      </div>
+      <div class="rating-overview fade-in">
+        <div class="rating-number">5.0</div>
+        <div>
+          <div class="rating-stars">★★★★★</div>
+          <div class="rating-count">9 avis Google vérifiés</div>
+        </div>
+      </div>
+    </div>
+    <div class="reviews-grid">
+      <div class="review-card fade-in">
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text">Très bon professionnel, toujours à l'écoute de son client, ponctuel et disponible</p>
+        <div class="review-author">
+          <div class="review-avatar">EV</div>
+          <div>
+            <strong>Evelyne Vaslin</strong>
+            <div class="review-source">Google</div>
+          </div>
+        </div>
+      </div>
+      <div class="review-card fade-in">
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text">Excellent travail, intervention rapide et soignée. Je recommande vivement Duroueix électricité pour tous vos besoins électriques.</p>
+        <div class="review-author">
+          <div class="review-avatar">JM</div>
+          <div>
+            <strong>Jean-Marc B.</strong>
+            <div class="review-source">Google</div>
+          </div>
+        </div>
+      </div>
+      <div class="review-card fade-in">
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text">Sérieux, compétent et très professionnel. Travaux réalisés dans les délais annoncés et au prix convenu. Parfait.</p>
+        <div class="review-author">
+          <div class="review-avatar">SM</div>
+          <div>
+            <strong>Sophie M.</strong>
+            <div class="review-source">Google</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div style="text-align:center; margin-top:32px;">
+      <a href="https://www.google.com/maps/place/?q=place_id:ChIJceeOMakz_kcRaZo3udlAVPw" target="_blank" rel="noopener" class="btn-primary" style="display:inline-flex; width:auto;">
+        Voir tous les avis Google →
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ─── PRESENTATION / ABOUT ─── -->
+<section id="presentation">
+  <div class="section-inner">
+    <div class="about-content">
+      <div class="about-text fade-in">
+        <div class="section-tag">Qui sommes-nous</div>
+        <h2 class="section-title">À propos de Duroueix électricité</h2>
+        <p>Duroueix électricité est votre partenaire de confiance pour tous vos travaux électriques à Angoulême et ses environs. Fort de notre certification Qualifelec et de notre assurance décennale, nous garantissons des interventions de qualité, que ce soit pour des installations neuves, des mises aux normes ou des dépannages urgents.</p>
+        <p>Notre équipe est à l'écoute de vos besoins pour vous offrir des solutions adaptées et sécurisées.</p>
+        <div class="about-certifs">
+          <span class="certif-badge">✓ Qualifelec</span>
+          <span class="certif-badge">✓ Assurance décennale</span>
+          <span class="certif-badge">✓ Devis gratuit</span>
+        </div>
+      </div>
+      <div class="about-visual fade-in">
+        <div class="about-feature">
+          <span class="icon">🏆</span>
+          <strong>Certification</strong>
+          <span>Qualifelec</span>
+        </div>
+        <div class="about-feature">
+          <span class="icon">📋</span>
+          <strong>Assurance</strong>
+          <span>Décennale</span>
+        </div>
+        <div class="about-feature">
+          <span class="icon">⚡</span>
+          <strong>Réactivité</strong>
+          <span>Dépannage urgent</span>
+        </div>
+        <div class="about-feature">
+          <span class="icon">💬</span>
+          <strong>Écoute</strong>
+          <span>Solutions adaptées</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── GARANTIES ─── -->
+<section id="garanties">
+  <div class="section-inner">
+    <div class="section-tag" style="text-align:center;">Pourquoi nous choisir</div>
+    <h2 class="section-title text-center">Nos Garanties</h2>
+    <p class="section-subtitle text-center" style="margin: 0 auto 48px;">Chaque intervention est réalisée avec le plus grand soin pour votre sécurité et votre satisfaction.</p>
+    <div class="garanties-grid">
+      <div class="garantie-card fade-in">
+        <div class="garantie-icon" style="background:rgba(26,77,143,0.08);">🔒</div>
+        <h3>Travaux aux normes</h3>
+        <p>Toutes nos installations respectent la norme NF C 15-100 pour votre sécurité.</p>
+      </div>
+      <div class="garantie-card fade-in">
+        <div class="garantie-icon" style="background:rgba(245,166,35,0.12);">⚡</div>
+        <h3>Intervention rapide</h3>
+        <p>Dépannage en urgence disponible pour limiter les interruptions de service.</p>
+      </div>
+      <div class="garantie-card fade-in">
+        <div class="garantie-icon" style="background:rgba(233,78,27,0.08);">💰</div>
+        <h3>Devis transparent</h3>
+        <p>Devis gratuit et détaillé sans frais cachés. Prix annoncé, prix respecté.</p>
+      </div>
+      <div class="garantie-card fade-in">
+        <div class="garantie-icon" style="background:rgba(26,77,143,0.08);">📞</div>
+        <h3>Suivi client</h3>
+        <p>Un interlocuteur unique pour vous accompagner de A à Z sur votre projet.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── CONTACT ─── -->
+<section id="contact-rapide">
+  <div class="section-inner">
+    <div class="section-tag">Parlons de votre projet</div>
+    <h2 class="section-title">Contactez-nous</h2>
+    <p class="section-subtitle">Pour toute demande, veuillez nous appeler ou remplir notre formulaire en ligne.</p>
+    <div class="contact-content">
+      <div class="contact-info fade-in">
+        <h3>Informations de contact</h3>
+        <div class="contact-info-item">
+          <div class="contact-info-icon">📞</div>
+          <div>
+            <strong>Téléphone</strong>
+            <a href="tel:+33668769107">+33 6 68 76 91 07</a>
+          </div>
+        </div>
+        <div class="contact-info-item">
+          <div class="contact-info-icon">📍</div>
+          <div>
+            <strong>Adresse</strong>
+            <p>191 Rue de Montbron<br>16000 Angoulême, France</p>
+            <a href="https://www.google.com/maps/place/?q=place_id:ChIJceeOMakz_kcRaZo3udlAVPw" target="_blank" rel="noopener" class="gmaps-link">
+              📍 Voir sur Google Maps
+            </a>
+          </div>
+        </div>
+        <div class="contact-info-item">
+          <div class="contact-info-icon">🕐</div>
+          <div>
+            <strong>Horaires</strong>
+            <div class="hours-table">
+              <div class="hours-row">
+                <span class="hours-day">Lundi</span>
+                <span class="hours-time">8h00 – 18h00</span>
+              </div>
+              <div class="hours-row">
+                <span class="hours-day">Mardi</span>
+                <span class="hours-time">8h00 – 18h00</span>
+              </div>
+              <div class="hours-row">
+                <span class="hours-day">Mercredi</span>
+                <span class="hours-time">8h00 – 18h00</span>
+              </div>
+              <div class="hours-row">
+                <span class="hours-day">Jeudi</span>
+                <span class="hours-time">8h00 – 18h00</span>
+              </div>
+              <div class="hours-row">
+                <span class="hours-day">Vendredi</span>
+                <span class="hours-time">8h00 – 18h00</span>
+              </div>
+              <div class="hours-row">
+                <span class="hours-day">Samedi</span>
+                <span class="hours-time closed">Fermé</span>
+              </div>
+              <div class="hours-row">
+                <span class="hours-day">Dimanche</span>
+                <span class="hours-time closed">Fermé</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="contact-form-wrapper fade-in">
+        <form action="#" method="POST" onsubmit="handleSubmit(event)">
+          <label for="name">Nom complet</label>
+          <input type="text" id="name" name="name" placeholder="Votre nom" required>
+
+          <label for="email">Adresse email</label>
+          <input type="email" id="email" name="email" placeholder="votre@email.fr" required>
+
+          <label for="phone_form">Téléphone</label>
+          <input type="tel" id="phone_form" name="phone" placeholder="06 XX XX XX XX">
+
+          <label for="message">Votre message</label>
+          <textarea id="message" name="message" placeholder="Décrivez votre besoin électrique..." required></textarea>
+
+          <button type="submit" class="btn-submit">⚡ Envoyer ma demande</button>
+          <div id="form-success" style="display:none; margin-top:16px; padding:14px; background:rgba(26,77,143,0.08); border:1px solid rgba(26,77,143,0.20); border-radius:4px; color:var(--primary); font-family:var(--font-heading); font-size:0.88rem; font-weight:600; text-align:center;">
+            ✓ Votre message a été envoyé ! Nous vous contacterons rapidement.
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── FOOTER ─── -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <strong>Duroueix <span>électricité</span></strong>
+        <p>Votre électricien de confiance à Angoulême et en Charente. Certification Qualifelec, assurance décennale.</p>
+        <div class="footer-badge">
+          <div class="stars">★★★★★</div>
+          <div class="footer-badge-text">
+            <strong>5.0 / 5</strong>
+            <span>9 avis Google</span>
+          </div>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Services</h4>
+        <a href="#services">Dépannage électrique urgent</a>
+        <a href="#services">Installation électrique</a>
+        <a href="#services">Sécurité électrique</a>
+        <a href="#garanties">Mise aux normes</a>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <a href="tel:+33668769107">+33 6 68 76 91 07</a>
+        <p>191 Rue de Montbron<br>16000 Angoulême, France</p>
+        <a href="https://www.google.com/maps/place/?q=place_id:ChIJceeOMakz_kcRaZo3udlAVPw" target="_blank" rel="noopener">
+          📍 Voir sur Google Maps
+        </a>
+        <p style="margin-top:10px;">Lun–Ven : 8h00 – 18h00</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2024 Duroueix électricité — Tous droits réservés</p>
+      <p>191 Rue de Montbron, 16000 Angoulême — <a href="tel:+33668769107">+33 6 68 76 91 07</a></p>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // ─── HAMBURGER MENU ───
+  function toggleMenu() {
+    const menu = document.getElementById('mobileMenu');
+    const btn = document.querySelector('.hamburger');
+    menu.classList.toggle('open');
+    btn.classList.toggle('open');
+  }
+
+  function closeMenu() {
+    const menu = document.getElementById('mobileMenu');
+    const btn = document.querySelector('.hamburger');
+    menu.classList.remove('open');
+    btn.classList.remove('open');
+  }
+
+  // Close menu on outside click
+  document.addEventListener('click', function(e) {
+    const nav = document.querySelector('nav');
+    if (!nav.contains(e.target)) closeMenu();
+  });
+
+  // ─── INTERSECTION OBSERVER (FADE IN) ───
+  const fadeEls = document.querySelectorAll('.fade-in');
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.12 });
+
+  fadeEls.forEach(el => observer.observe(el));
+
+  // ─── FORM SUBMISSION ───
+  function handleSubmit(e) {
+    e.preventDefault();
+    const success = document.getElementById('form-success');
+    success.style.display = 'block';
+    e.target.reset();
+    setTimeout(() => { success.style.display = 'none'; }, 6000);
+  }
+
+  // ─── SMOOTH SCROLL FOR ANCHOR LINKS ───
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+      const target = document.querySelector(this.getAttribute('href'));
+      if (target) {
+        e.preventDefault();
+        const navH = document.querySelector('nav').offsetHeight;
+        const top = target.getBoundingClientRect().top + window.pageYOffset - navH;
+        window.scrollTo({ top, behavior: 'smooth' });
+      }
+    });
+  });
+
+  // ─── ACTIVE NAV HIGHLIGHT ───
+  const sections = document.querySelectorAll('section[id]');
+  const navLinks = document.querySelectorAll('.nav-links a');
+
+  window.addEventListener('scroll', () => {
+    let current = '';
+    sections.forEach(section => {
+      const sectionTop = section.offsetTop - 100;
+      if (pageYOffset >= sectionTop) current = section.getAttribute('id');
+    });
+    navLinks.forEach(link => {
+      link.style.color = '';
+      if (link.getAttribute('href') === '#' + current) {
+        link.style.color = 'var(--primary)';
+      }
+    });
+  });
+</script>
+</body>
+</html>
